@@ -10,11 +10,11 @@ public class T_3052 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		
+
 		int result = 0;
 
 		for (int i = 0; i < 10; i++) {
-			int temp = Integer.parseInt(br.readLine())%42;
+			int temp = Integer.parseInt(br.readLine()) % 42;
 
 			boolean isExist = false;
 			for (int j = 0; j < list.size(); j++) {
@@ -23,7 +23,7 @@ public class T_3052 {
 					break;
 				}
 			}
-			if(isExist == false) {
+			if (isExist == false) {
 				list.add(temp);
 				result++;
 			}
